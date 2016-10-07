@@ -3,6 +3,8 @@
 Wordpress Plugin for Image Compare based on TwentyTwenty.
 Show images before/after comparison of your WordPress images.
 
+![Zurb Twenty Twenty](http://zurb.com/playground/uploads/project/thumb/12/twentytwenty.jpg)
+
 # Installation
 
 * Unzip and upload the plugin to the **/wp-content/plugins/** directory
