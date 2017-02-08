@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) or die( 'No direct script access allowed!' );
  */
 function fafCompareLoadTextdomain()
 {
-    load_plugin_textdomain('faf-compare', false, dirname(plugin_basename(__FILE__)) . '/lang/');
+    load_plugin_textdomain('faf-compare', false, dirname(plugin_basename(__FILE__)) . '/languages/');
 }
 add_action('plugins_loaded', 'fafCompareLoadTextdomain');
 
@@ -26,9 +26,9 @@ add_action('plugins_loaded', 'fafCompareLoadTextdomain');
  */
 function fafCompareEnqueueScriptsStyles()
 {
-    wp_enqueue_script('tt-event-move-js', plugins_url('twentytwenty/js/jquery.event.move.js', __FILE__), array('jquery'), '1.0', true);
-    wp_enqueue_script('tt-jquery-js', plugins_url('twentytwenty/js/jquery.twentytwenty.js', __FILE__), array('jquery'), '1.0', true);
-    wp_enqueue_script('tt-compare-js', plugins_url('twentytwenty/js/jquery.compare.js', __FILE__), array('jquery'), '1.0', true);
+    wp_enqueue_script('tt-event-move-js', plugins_url('twentytwenty/js/jquery.event.move.js', __FILE__), array(), '1.0', true);
+    wp_enqueue_script('tt-jquery-js', plugins_url('twentytwenty/js/jquery.twentytwenty.js', __FILE__), array(), '1.0', true);
+    wp_enqueue_script('tt-compare-js', plugins_url('twentytwenty/js/jquery.compare.js', __FILE__), array(), '1.0', true);
 
     wp_enqueue_style('tt-foundation-css', plugins_url('twentytwenty/css/foundation.css', __FILE__));
     wp_enqueue_style('tt-css', plugins_url('twentytwenty/css/twentytwenty.css', __FILE__), array('tt-foundation-css'));
