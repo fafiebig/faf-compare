@@ -1,3 +1,6 @@
+# DEPRECATED - DO NOT USE IT ANY LONGER!
+
+
 # faf-compare
 
 Wordpress Plugin for Image Compare based on TwentyTwenty.
